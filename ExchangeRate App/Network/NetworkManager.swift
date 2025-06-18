@@ -42,9 +42,7 @@
 
 import Foundation
 
-protocol ExchangeRateServiceProtocol {
-    func fetchExchangeRates(completion: @escaping (Result<ExchangeRateResponse, Error>) -> Void)
-}
+
 class NetworkManager: ExchangeRateServiceProtocol {
     static let shared = NetworkManager()
     private init() {}
